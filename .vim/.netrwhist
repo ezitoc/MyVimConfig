@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ezequiel/.vim/bundle/lhBrackets'
+let g:netrw_dirhist_2='/home/ezequiel/Datos/Wandlowski/cluster/minimizaciones/1-Au-T'
+let g:netrw_dirhist_3='/home/ezequiel/Datos/Wandlowski/estructuras/minimizacion/BT4'
+let g:netrw_dirhist_4='/home/ezequiel/Datos/Wandlowski/estructuras/min_molecules/BT1'
+let g:netrw_dirhist_5='/home/ezequiel/Datos/Wandlowski/clus_mol/1-Au-sh'
+let g:netrw_dirhist_6='/home/ezequiel/Datos/Wandolowski/Sistemas/bt1'
+let g:netrw_dirhist_7='/home/ezequiel/.local/src/siesta-3.2/Tests/32_h2o'
+let g:netrw_dirhist_8='/home/ezequiel/Datos/Pseudos/fe/fe_spin.ae'

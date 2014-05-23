@@ -1,0 +1,21 @@
+" Add lines at the bottom before adding at the top, since the line numbers
+" will change when you add lines.
+function! Frame() range
+  " Define a list of lines and prepend the desired indentation.
+  let botlines = ['end = time.time()', 'print end - start', 'import sys', 'sys.exit(0)']
+  let botspaces = matchstr(getline(a:lastline), '\s*')
+  let lines = []
+  for line in botlines
+    call add(lines, botspaces . line)
+  endfor
+  " Now add those lines at the bottom.
+  call append(a:lastline, lines)
+  " Now do the same thing at the top.
+  let toplines = ['import time', 'start = time.time()']
+  let topspaces = matchstr(getline(a:firstline), '\s*')
+  let lines = []
+  for line in toplines
+    call add(lines, topspaces . line)
+  endfor
+  call append(a:firstline - 1, lines)
+endfun
